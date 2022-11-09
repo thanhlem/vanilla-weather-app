@@ -56,6 +56,7 @@ function handleSubmit(event) {
 }
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
 function displayFahrenheit(event) {
   event.preventDefault();
   celsiusLink.classList.remove("active");
