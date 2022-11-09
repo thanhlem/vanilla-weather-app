@@ -56,3 +56,24 @@ function handleSubmit(event) {
 }
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+function displayFahrenheit(event) {
+  event.preventDefault();
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let temperatureElement = document.querySelector("#temperature");
+  let fahrenheit = (temperatureElement.innerHTML * 9) / 5 + 32;
+
+  temperatureElement.innerHTML = Math.round(fahrenheit);
+}
+function displayCelsius(event) {
+  event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = celsius;
+}
+let celsius = null;
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheit);
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsius);
