@@ -1,3 +1,57 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.weather-app {
+  padding: 20px;
+  border: 1px solid #d8d2e6;
+  border-radius: 6px;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+.weather-temp img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+}
+.weather-temp strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+
 h1 {
-  color:blue;
+  color: rgb(135, 135, 135);
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+li::first-letter {
+  text-transform: capitalize;
+}
+.weather-temp .active {
+  color: black;
+}
+.weather-temp .units {
+  position: relative;
+  font-size: 16px;
+  top: -32px;
+  text-decoration: none;
 }
